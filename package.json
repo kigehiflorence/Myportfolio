@@ -1,0 +1,28 @@
+{
+  "name": "techgriffo-terminal-portfolio",
+  "version": "1.0.0",
+  "description": "A terminal-style cybersecurity specialist portfolio for TechGriffo",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build complete'",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "terminal",
+    "cybersecurity",
+    "techgriffo",
+    "web-development"
+  ],
+  "author": "Mudenyo Griffins (TechGriffo)",
+  "license": "MIT",
+  "homepage": "https://github.com/TechGriffo254/Terminal-Portfolio#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechGriffo254/Terminal-Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TechGriffo254/Terminal-Portfolio/issues"
+  }
+}

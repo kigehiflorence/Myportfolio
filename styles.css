@@ -8,6 +8,9 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
+  /* Mobile viewport height fix */
+  --vh: 1vh;
+
   /* Theme variables */
   /* Default theme (Cyber) */
   --color-primary: #7ae0ca;
@@ -259,7 +262,7 @@ hr {
 }
 
 #liner::before {
-  content: "[prithvi@archrx5500m]~$";
+  content: "[techgriffo@terminal]~$";
 }
 
 .cursor {
@@ -395,4 +398,134 @@ pre {
 a {
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .terminal-window {
+    margin: 0;
+    border-radius: 0;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+  }
+  
+  .ascii {
+    font-size: var(--step--1);
+    text-align: center;
+  }
+  
+  .profile-info {
+    padding: var(--step--1);
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+  }
+  
+  .info-item i {
+    margin-right: 0.5rem;
+  }
+  
+  #terminal {
+    height: 45vh;
+    height: calc(var(--vh, 1vh) * 45);
+    padding-left: var(--step--1);
+    font-size: var(--step--1);
+  }
+  
+  #command {
+    height: 40px;
+  }
+  
+  /* Make touch targets larger */
+  .link-text {
+    padding: 0.25rem 0;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-window {
+    padding: 0.5rem;
+  }
+  
+  header {
+    padding: 0.5rem;
+  }
+  
+  .centered span {
+    font-size: var(--step--1);
+  }
+  
+  .ascii {
+    font-size: var(--step--2);
+  }
+  
+  .profile-info {
+    padding: var(--step--2);
+  }
+  
+  .info-item {
+    font-size: var(--step--1);
+  }
+  
+  #terminal {
+    height: 40vh;
+    padding-left: 0.5rem;
+    font-size: var(--step--1);
+  }
+  
+  /* Horizontal scrolling for pre elements */
+  pre {
+    font-size: var(--step--2);
+    overflow-x: auto;
+    white-space: pre;
+    word-break: normal;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Touch-friendly styling */
+  .link-text:active {
+    background-color: var(--color-hover);
+    border-radius: 4px;
+  }
+  
+  #command:active,
+  #texter:active {
+    background-color: rgba(115, 171, 173, 0.1);
+  }
+  
+  /* Larger touch targets */
+  .header-icon {
+    padding: 1rem;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Landscape phone orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  #terminal {
+    height: 35vh;
+  }
+  
+  .content-container {
+    gap: 0.5rem;
+  }
+  
+  .ascii {
+    margin-bottom: 0.5rem;
+  }
 }

@@ -22,21 +22,47 @@ const commandMap = {
   aboutme: "aboutme",
   projects: "projects",
   social: "social",
+  skills: "skills",
+  education: "education",
+  experience: "experience",
   email: "email",
   history: "history",
   sudo: "sudo",
   clear: "clear",
-  dev: "dev",
-  twitter: "twitter",
   linkedin: "linkedin",
-  instagram: "instagram",
   github: "github",
   snake: "snake",
 };
 
+// Mobile detection and enhancements
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+         (window.innerWidth <= 768);
+}
+
+// Mobile-specific adjustments
+if (isMobile()) {
+  // Adjust terminal height for mobile keyboards
+  function adjustForKeyboard() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  
+  window.addEventListener('resize', adjustForKeyboard);
+  adjustForKeyboard();
+  
+  // Add touch event for better mobile interaction
+  document.addEventListener('touchstart', function() {
+    textarea.focus();
+  });
+}
+
 setTimeout(function () {
   loopLines(banner, "", 80);
-  textarea.focus();
+  // Focus only if not on mobile to prevent keyboard popup
+  if (!isMobile()) {
+    textarea.focus();
+  }
   scrollToBottom();
 }, 100);
 
@@ -46,7 +72,10 @@ window.addEventListener("keyup", function (e) {
 });
 
 window.addEventListener("keydown", function () {
-  textarea.focus();
+  // Only auto-focus on desktop
+  if (!isMobile()) {
+    textarea.focus();
+  }
   scrollToBottom();
 });
 
@@ -109,7 +138,7 @@ function enterKey(e) {
 
   if (e.keyCode === 13) {
     const input = command.innerHTML.trim().toLowerCase();
-    addLine("[prithvi@archrx5500m]~$" + command.innerHTML, "no-animation", 0);
+    addLine("[techgriffo@terminal]~$" + command.innerHTML, "no-animation", 0);
 
     if (awaitingConfirmation && suggestedCommand) {
       if (input === "y") {
@@ -159,6 +188,15 @@ function commander(cmd) {
     case "social":
       loopLines(social, "color2 margin", 80);
       break;
+    case "skills":
+      loopLines(skills, "color2 margin", 80);
+      break;
+    case "education":
+      loopLines(education, "color2 margin", 80);
+      break;
+    case "experience":
+      loopLines(experience, "color2 margin", 80);
+      break;
     case "history":
       addLine("<br>", "", 0);
       loopLines(commands, "color2", 80);
@@ -166,7 +204,7 @@ function commander(cmd) {
       break;
     case "email":
       addLine(
-        'Opening mailto:<a href="mailto:yewaleprithvi2003@gmail.com"> yewaleprithvi2003@gmail.com</a>...',
+        'Opening mailto:<a href="mailto:griffotech254@gmail.com"> griffotech254@gmail.com</a>...',
         "color2",
         80,
       );
@@ -189,21 +227,9 @@ function commander(cmd) {
         scrollToBottom();
       }, 1);
       break;
-    case "dev":
-      addLine("Opening Dev.to...", "color2", 80);
-      newTab(dev);
-      break;
-    case "twitter":
-      addLine("Opening Twitter...", "color2", 0);
-      newTab(twitter);
-      break;
     case "linkedin":
       addLine("Opening LinkedIn...", "color2", 0);
       newTab(linkedin);
-      break;
-    case "instagram":
-      addLine("Opening Instagram...", "color2", 0);
-      newTab(instagram);
       break;
     case "github":
       addLine("Opening GitHub...", "color2", 0);

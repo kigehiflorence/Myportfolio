@@ -1,10 +1,7 @@
-var dev = "https://dev.to/cosmicwanderer7";
-var twitter = "https://twitter.com/PrithviYewale";
-var linkedin = "https://www.linkedin.com/in/prithvi-yewale-a77275228/";
-var instagram = "https://www.instagram.com/prithvi_yewale/";
-var github = "https://github.com/cosmicwanderer7";
+var linkedin = "https://www.linkedin.com/in/griffotech254";
+var github = "https://github.com/TechGriffo254";
 var sudo = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
-var email = "mailto:yewaleprithvi2003@gmail.com";
+var email = "mailto:griffotech254@gmail.com";
 
 let banner = [
   `<div id="banner-section" class="banner">
@@ -15,33 +12,32 @@ let banner = [
 let aboutme = [
   "<br>",
   `<div id="aboutme-section">`,
-  `<span class='underline'>Hey, I'm Prithvi! 👋</span>`,
+  `<span class='underline'>Hey, I'm Mudenyo Griffins! 👋</span>`,
   "<br>",
-  `<li>🔧 I'm a Desktop Engineer passionate about fullstack development and UI/UX design.</li>`,
-  `<li>💡 Always eager to learn new technologies and build meaningful digital products.</li>`,
-  `<li>🧠 Experienced in building responsive websites using Next.js and Tailwind CSS.</li>`,
-  `<li>📂 Use the <span class="command">projects</span> command to check out what I’ve built!</li>`,
-  `<li>👥 Looking to collaborate on exciting frontend/backend projects.</li>`,
-  `<li>📫 Contact: <a href="mailto:yewaleprithvi2003@gmail.com">yewaleprithvi2003@gmail.com</a></li>`,
+  `<li>🔐 I'm a Service Operations & Cybersecurity Specialist passionate about system security and operational excellence.</li>`,
+  `<li>🎓 Currently pursuing B.Sc. Computer Science at Kibabii University with specialization in Networking & Cybersecurity.</li>`,
+  `<li>🏆 Completed Software Engineering program at ALX Africa | Holberton School with honors.</li>`,
+  `<li>💻 Experienced in Python, C/C++, Java, JavaScript, and various cybersecurity tools.</li>`,
+  `<li>🛡️ Skilled in penetration testing, vulnerability assessment, and security audits.</li>`,
+  `<li>📊 Proficient in system monitoring, log analysis, and performance optimization.</li>`,
+  `<li>🔧 Expert in Linux systems (Debian, Kali, Arch, Parrot OS) and Windows administration.</li>`,
+  `<li>📂 Use the <span class="command">education</span>, <span class="command">experience</span>, <span class="command">skills</span>, and <span class="command">projects</span> commands to explore my background!</li>`,
+  `<li>📫 Contact: <a href="mailto:griffotech254@gmail.com">griffotech254@gmail.com</a></li>`,
   "</div>",
   "<br>",
 ];
 
 let social = [
   "<br>",
-  'dev        <a href="' + dev + '" target="_blank">dev.to/cosmicwanderer7</a>',
-  'twitter        <a href="' +
-    twitter +
-    '" target="_blank">twitter.com/PrithviYewale</a>',
   'linkedin       <a href="' +
     linkedin +
-    '" target="_blank">linkedin/prithviYewale</a>',
-  'instagram      <a href="' +
-    instagram +
-    '" target="_blank">instagram/prithvi_yewale</a>',
+    '" target="_blank">linkedin/griffotech254</a>',
   'github         <a href="' +
     github +
-    '" target="_blank">github/cosmicwanderer7</a>',
+    '" target="_blank">github/TechGriffo254</a>',
+  'email          <a href="' +
+    email +
+    '" target="_blank">griffotech254@gmail.com</a>',
   "<br>",
 ];
 
@@ -51,8 +47,14 @@ let help = [
 ↳ Displays who I am?
 <span class="command">social</span>
 ↳ Lists social networks.
+<span class="command">education</span>
+↳ View educational background & certifications.
+<span class="command">experience</span>
+↳ View work experience & projects.
+<span class="command">skills</span>
+↳ View technical skills & expertise.
 <span class="command">projects</span>
-↳ View coding projects.
+↳ View cybersecurity projects.
 <span class="command">email</span>
 ↳ To send me an email.
 <span class="command">history</span>
@@ -67,63 +69,151 @@ let help = [
 ↳ Clear the terminal.
 </pre></div><br>`,
 ];
+
 let projects = [
   "<br>",
   `<div id="projects-section">`,
-  `<a href="https://github.com/cosmicwanderer7/google-clone" target="_blank"><span class='underline'>Google Search Clone</span></a>`,
+  `<span class='underline'>Cybersecurity Projects</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Functional Google homepage replica using Tailwind CSS and Next.js.
-Live: <a href="https://google-clone-cosmicwanderer7.vercel.app/" target="_blank">google-clone.vercel.app</a>
-Built With:
-- Next.js
-- Tailwind CSS
-- Programmable Search API
+🛡️ Network Security Assessment
+• Conducted penetration testing on corporate networks
+• Identified and documented security vulnerabilities
+• Provided remediation strategies and security recommendations
+
+🔍 Log Analysis & Incident Response
+• Developed automated log parsing scripts for security monitoring
+• Analyzed system logs to detect anomalous patterns
+• Created incident response documentation and procedures
+
+🚨 Vulnerability Assessment Tools
+• Built custom vulnerability scanning automation scripts
+• Integrated multiple security tools (Nmap, Nessus, Burp Suite)
+• Generated comprehensive security assessment reports
 </pre>`,
 
-  `<a href="https://github.com/cosmicwanderer7/contactform" target="_blank"><span class='underline'>Contact Form with Google Sheets</span></a>`,
+  `<span class='underline'>Software Development Projects</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Next.js contact form storing data to Google Sheets via API, sends confirmation emails.
-Live: <a href="https://contactform-psi.vercel.app/" target="_blank">contactform-psi.vercel.app</a>
-Built With:
-- Next.js
-- Tailwind CSS
-- Google Sheets API
-- IFTTT
+💻 Backend Development
+• RESTful API development using Python and JavaScript
+• Database optimization and query performance tuning
+• Implementation of secure authentication and authorization systems
+
+📊 Data Analysis & Visualization
+• Real-time monitoring dashboards for system metrics
+• Automated reporting tools for operational insights
+• Statistical analysis scripts for performance optimization
+
+🔧 System Administration Tools
+• Bash automation scripts for routine maintenance tasks
+• Configuration management and deployment automation
+• Performance monitoring and alerting systems
+</pre>`,
+  "</div>",
+  "<br>",
+];
+
+let skills = [
+  "<br>",
+  `<div id="skills-section">`,
+  `<span class='underline'>Programming & Scripting</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+Languages: Python, C/C++, Java, JavaScript, Bash
+Frameworks: Backend Development, API Integration
+Version Control: Git, Advanced Workflow Management
 </pre>`,
 
-  `<a href="https://cosmicwanderer7.github.io/Terminal-Portfolio/" target="_blank"><span class='underline'>Terminal-Styled Portfolio</span></a>`,
+  `<span class='underline'>Service Operations & Monitoring</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-A responsive portfolio that mimics a Linux terminal interface.
-Built With:
-- Vanilla JS
-- Tailwind CSS
-- Yarn
+System Monitoring: Wireshark, Nmap, Network Analysis
+Log Analysis: Advanced log parsing and pattern recognition
+Process Automation: Python scripting, Bash automation
+Performance Optimization: System bottleneck identification
 </pre>`,
 
-  `<a href="https://github.com/cosmicwanderer7/github-script" target="_blank"><span class='underline'>GitHub Init Script</span></a>`,
+  `<span class='underline'>Cybersecurity & Compliance</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Bash script that automates GitHub repo creation and initial commit setup.
-Built With:
-- Bash
-- GitHub API
+Security Tools: Burp Suite, Metasploit, Nessus, John the Ripper
+Frameworks: ITIL understanding, Security compliance
+Risk Assessment: Vulnerability analysis, Threat modeling
+Incident Response: Investigation, Documentation, Remediation
 </pre>`,
 
-  `<a href="https://github.com/cosmicwanderer7/guacamole-deploy" target="_blank"><span class='underline'>Apache Guacamole on OCI</span></a>`,
+  `<span class='underline'>Database & Analytics</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Remote desktop gateway deployment for secure access on Oracle Cloud.
-Built With:
-- Apache Guacamole
-- Oracle Cloud
-- Linux
+Database Systems: MySQL, NoSQL (MongoDB), Data Modeling
+Data Analysis: Statistical analysis, Trend identification
+Reporting: Dashboard creation, Real-time monitoring
 </pre>`,
 
-  `<a href="https://github.com/cosmicwanderer7/mumble-deploy" target="_blank"><span class='underline'>Mumble Server on OCI</span></a>`,
+  `<span class='underline'>Operating Systems</span>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Voice chat server deployed on cloud for low-latency communication.
-Built With:
-- Mumble
-- Oracle Cloud
-- Linux
+Linux: Debian, Kali, Arch, Parrot OS (Advanced)
+Windows: Advanced troubleshooting and administration
+UNIX Environment: Command-line proficiency
+</pre>`,
+  "</div>",
+  "<br>",
+];
+
+let education = [
+  "<br>",
+  `<div id="education-section">`,
+  `<span class='underline'>Education</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+KIBABII UNIVERSITY | 2022 - Present
+• B.Sc. Computer Science (In Progress)
+• Specialization: Networking & Cybersecurity
+• Core Competencies: System Design, Database Management, 
+  Network Security, Artificial Intelligence
+
+ALX AFRICA | HOLBERTON SCHOOL | 2023 - 2024
+• Software Engineering (Backend) Program - Completed with Honors
+• Advanced Training: Full-Stack Development, Database Optimization, 
+  System Administration
+</pre>`,
+  
+  `<span class='underline'>Certifications & Honors</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+IBM Honors:
+• Security Analyst Fundamentals
+• Cybersecurity Fundamentals
+
+ALX Honors:
+• Software Engineering Fundamentals
+• Backend Development Excellence
+
+Coursera Specialization:
+• Security Analyst Fundamentals (With Honors)
+</pre>`,
+  "</div>",
+  "<br>",
+];
+
+let experience = [
+  "<br>",
+  `<div id="experience-section">`,
+  `<span class='underline'>Cybersecurity & System Analysis</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+• Conducted comprehensive penetration testing using industry-standard tools
+• Performed vulnerability assessments and security audits
+• Analyzed system logs for security incidents and performance bottlenecks
+• Developed automated scripts for routine security and operational tasks
+</pre>`,
+
+  `<span class='underline'>Service Operations Projects</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+• Implemented monitoring solutions for system performance tracking
+• Created automated reporting dashboards for operational metrics
+• Optimized database queries and system processes for improved efficiency
+• Analyzed service logs to identify and resolve operational issues
+</pre>`,
+
+  `<span class='underline'>Data Analysis & Reporting</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+• Processed and analyzed large datasets for operational insights
+• Created visualization dashboards for real-time system monitoring
+• Developed data integrity validation processes
+• Generated actionable reports for operational decision-making
 </pre>`,
   "</div>",
   "<br>",

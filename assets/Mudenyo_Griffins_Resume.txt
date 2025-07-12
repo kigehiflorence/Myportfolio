@@ -1,0 +1,121 @@
+MUDENYO GRIFFINS
+Service Operations & Cybersecurity Specialist
+griffotech254@gmail.com |  +254113406513 |  www.linkedin.com/in/griffotech254
+________________________________________
+
+PROFESSIONAL SUMMARY
+Highly motivated Computer Science student with specialized expertise in Cybersecurity and Service Operations. Proven experience in system monitoring, log analysis, and security frameworks with hands-on proficiency in automation tools and data analysis. Passionate about optimizing service operations in fintech environments and leveraging data-driven insights to enhance system performance.
+
+________________________________________
+
+EDUCATION
+KIBABII UNIVERSITY | 2022 - Present
+•	B.Sc. Computer Science (In Progress)
+•	Specialization: Networking & Cybersecurity
+•	Core Competencies: System Design, Database Management, Network Security, Artificial Intelligence
+
+ALX AFRICA | HOLBERTON SCHOOL | 2023 - 2024
+•	Software Engineering (Backend) Program - Completed with Honors
+•	Advanced Training: Full-Stack Development, Database Optimization, System Administration
+
+________________________________________
+
+TECHNICAL SKILLS
+
+Programming & Scripting
+•	Languages: Python, C/C++, Java, JavaScript, Bash
+•	Frameworks: Backend Development, API Integration
+•	Version Control: Git, Advanced Workflow Management
+
+Service Operations & Monitoring
+•	System Monitoring: Wireshark, Nmap, Network Analysis
+•	Log Analysis: Advanced log parsing and pattern recognition
+•	Process Automation: Python scripting, Bash automation
+•	Performance Optimization: System bottleneck identification
+
+Database & Analytics
+•	Database Systems: MySQL, NoSQL (MongoDB), Data Modeling
+•	Data Analysis: Statistical analysis, Trend identification
+•	Reporting: Dashboard creation, Real-time monitoring
+
+Cybersecurity & Compliance
+•	Security Tools: Burp Suite, Metasploit, Nessus, John the Ripper
+•	Frameworks: ITIL understanding, Security compliance
+•	Risk Assessment: Vulnerability analysis, Threat modeling
+•	Incident Response: Investigation, Documentation, Remediation
+
+Operating Systems
+•	Linux: Debian, Kali, Arch, Parrot OS (Advanced)
+•	Windows: Advanced troubleshooting and administration
+•	UNIX Environment: Command-line proficiency
+
+________________________________________
+
+RELEVANT EXPERIENCE & PROJECTS
+
+CYBERSECURITY & SYSTEM ANALYSIS
+•	Conducted comprehensive penetration testing using industry-standard tools
+•	Performed vulnerability assessments and security audits
+•	Analyzed system logs for security incidents and performance bottlenecks
+•	Developed automated scripts for routine security and operational tasks
+
+SERVICE OPERATIONS PROJECTS
+•	Implemented monitoring solutions for system performance tracking
+•	Created automated reporting dashboards for operational metrics
+•	Optimized database queries and system processes for improved efficiency
+•	Analyzed service logs to identify and resolve operational issues
+
+DATA ANALYSIS & REPORTING
+•	Processed and analyzed large datasets for operational insights
+•	Created visualization dashboards for real-time system monitoring
+•	Developed data integrity validation processes
+•	Generated actionable reports for operational decision-making
+
+________________________________________
+
+CERTIFICATIONS & HONORS
+
+IBM Honors:
+•	Security Analyst Fundamentals
+•	Cybersecurity Fundamentals
+
+ALX Honors:
+•	Software Engineering Fundamentals
+•	Backend Development Excellence
+
+Coursera Specialization:
+•	Security Analyst Fundamentals (With Honors)
+
+________________________________________
+
+CORE COMPETENCIES
+
+Technical Excellence
+•	System Architecture & Design
+•	Network Security & Monitoring
+•	Database Optimization
+•	Process Automation
+•	Performance Tuning
+
+Analytical Skills
+•	Data-Driven Decision Making
+•	Root Cause Analysis
+•	Trend Analysis & Forecasting
+•	Risk Assessment
+•	Problem-Solving
+
+Professional Skills
+•	Team Collaboration
+•	Technical Documentation
+•	Project Coordination
+•	Stakeholder Communication
+•	Continuous Learning
+
+________________________________________
+
+INTERESTS & ADDITIONAL SKILLS
+•	Fintech Security & Compliance
+•	Mobile Payment Systems
+•	Cloud Infrastructure
+•	DevOps Practices
+•	Data Science Applications
