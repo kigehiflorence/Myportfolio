@@ -13,8 +13,46 @@ let awaitingConfirmation = false;
 
 function scrollToBottom() {
   if (contentscroll) {
-    contentscroll.scrollTop = contentscroll.scrollHeight;
+    // Smooth scroll for better user experience
+    contentscroll.scrollTo({
+      top: contentscroll.scrollHeight,
+      behavior: 'smooth'
+    });
   }
+  
+  // Also scroll the terminal container if it exists
+  if (terminal) {
+    terminal.scrollTo({
+      top: terminal.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+  
+  // Fallback for browsers that don't support smooth scrolling
+  setTimeout(() => {
+    if (contentscroll) {
+      contentscroll.scrollTop = contentscroll.scrollHeight;
+    }
+    if (terminal) {
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+  }, 100);
+}
+
+// Enhanced auto-scroll function for command completion
+function autoScrollAfterCommand() {
+  // Immediate scroll
+  scrollToBottom();
+  
+  // Delayed scroll to handle any animations or delayed content
+  setTimeout(() => {
+    scrollToBottom();
+  }, 200);
+  
+  // Final scroll to ensure we're at the bottom
+  setTimeout(() => {
+    scrollToBottom();
+  }, 500);
 }
 
 const commandMap = {
@@ -93,7 +131,10 @@ setTimeout(function () {
 
 window.addEventListener("keyup", function (e) {
   enterKey(e);
-  scrollToBottom();
+  // Auto-scroll on key input for better tracking
+  setTimeout(() => {
+    scrollToBottom();
+  }, 10);
 });
 
 window.addEventListener("keydown", function () {
@@ -129,7 +170,16 @@ if (isMobile()) {
   });
 }
 
-textarea.addEventListener("input", scrollToBottom);
+// Enhanced input event listener with auto-scroll
+textarea.addEventListener("input", function() {
+  // Update command display
+  command.innerHTML = textarea.value;
+  
+  // Auto-scroll as user types
+  setTimeout(() => {
+    scrollToBottom();
+  }, 10);
+});
 
 textarea.value = "";
 command.innerHTML = textarea.value;
@@ -196,7 +246,9 @@ function enterKey(e) {
 
     command.innerHTML = "";
     textarea.value = "";
-    scrollToBottom();
+    
+    // Enhanced auto-scroll after command execution
+    autoScrollAfterCommand();
   }
 
   if (e.keyCode === 38 && git !== 0) {
@@ -264,7 +316,8 @@ function commander(cmd) {
           loopLines(banner, "", 80);
         }
         textarea.focus();
-        scrollToBottom();
+        // Auto-scroll after clear
+        autoScrollAfterCommand();
       }, 1);
       break;
     case "linkedin":
@@ -301,7 +354,9 @@ function commander(cmd) {
       }
       break;
   }
-  scrollToBottom();
+  
+  // Enhanced auto-scroll after any command execution
+  autoScrollAfterCommand();
 }
 
 function newTab(link) {
@@ -326,7 +381,14 @@ function addLine(text, style, time) {
     next.innerHTML = t;
     next.className = style;
     before.parentNode.insertBefore(next, before);
-    contentscroll.scrollTop = contentscroll.scrollHeight;
+    
+    // Auto-scroll after adding each line
+    scrollToBottom();
+    
+    // Additional scroll for animations
+    setTimeout(() => {
+      scrollToBottom();
+    }, 50);
   }, time);
 }
 
@@ -334,11 +396,13 @@ function loopLines(name, style, time) {
   name.forEach(function (item, index) {
     addLine(item, style, index * time);
   });
+  
+  // Enhanced auto-scroll after all lines are added
   setTimeout(
     function () {
-      scrollToBottom();
+      autoScrollAfterCommand();
     },
-    name.length * time + 50,
+    name.length * time + 100,
   );
 }
 

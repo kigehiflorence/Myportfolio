@@ -578,7 +578,7 @@ a {
   }
   
   .profile-info {
-    padding: 0.25rem;
+    padding: 0.125rem;
     max-width: 100%;
     width: 100%;
     min-width: auto;
@@ -795,4 +795,73 @@ a {
   background-color: rgba(8, 29, 45, 0.9);
   border-top: 1px solid var(--color-primary);
   margin-top: auto;
+}
+
+/* Enhanced scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+#contentscroll {
+  scroll-behavior: smooth;
+}
+
+#terminal {
+  scroll-behavior: smooth;
+}
+
+/* Improved scrollbar styling */
+#contentscroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+#contentscroll::-webkit-scrollbar-track {
+  background: rgba(122, 224, 202, 0.1);
+  border-radius: 3px;
+}
+
+#contentscroll::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+#contentscroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+#terminal::-webkit-scrollbar {
+  width: 6px;
+}
+
+#terminal::-webkit-scrollbar-track {
+  background: rgba(122, 224, 202, 0.1);
+  border-radius: 3px;
+}
+
+#terminal::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+#terminal::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Mobile scrolling improvements */
+@media (max-width: 768px) {
+  #contentscroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  #terminal {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbars on mobile for cleaner look */
+  #contentscroll::-webkit-scrollbar,
+  #terminal::-webkit-scrollbar {
+    display: none;
+  }
 }
