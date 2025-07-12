@@ -138,14 +138,16 @@ hr {
 .ascii {
   font-family: monospace; /* Makes sure characters align */
   white-space: pre; /* Preserve formatting */
-  display: inline-block;
+  display: block;
   font-size: var(--step-ascii);
   padding-left: var(--step-2);
   color: var(--color-hover);
   white-space: pre-wrap;
-  display: inline-block;
   overflow-wrap: break-word;
   line-height: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; /* handle wide ASCII art */
 }
 
 .name {
@@ -195,30 +197,54 @@ hr {
   display: flex;
   flex-direction: row;
   gap: 9rem; /* space between ASCII and profile */
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: nowrap; /* prevent wrapping on intermediate sizes */
+  align-items: flex-start; /* align to top */
+  justify-content: flex-start; /* align to left */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ascii-Hero {
   flex-shrink: 0; /* prevent shrinking */
+  min-width: 0; /* allow content to determine size */
 }
 
 .profile-info {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  min-width: 300px; /* minimum width to maintain layout */
   text-align: left;
   font-size: var(--step--1);
   padding: var(--step-2);
+  flex-grow: 0; /* don't grow beyond max-width */
+  flex-shrink: 1; /* allow shrinking if needed */
 }
 
 /* Responsive: stack on smaller screens */
+@media (max-width: 1200px) {
+  .content-container {
+    gap: 4rem; /* reduce gap on medium screens */
+  }
+}
+
 @media (max-width: 1015px) {
   .content-container {
     flex-direction: column;
-    gap: 0rem; /* space between ASCII and profile */
+    gap: 1rem; /* small gap when stacked */
+    align-items: center; /* center when stacked */
   }
+  
+  .ascii-Hero {
+    width: 100%;
+    text-align: center;
+  }
+  
   .profile-info {
-    padding-top: var(--step--2);
+    padding-top: var(--step--1);
+    min-width: auto;
+    max-width: 90%;
+    width: 100%;
   }
 
   .spotify-panel {
@@ -414,13 +440,31 @@ a {
     width: 100vw;
   }
   
+  .content-container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    padding: 0 1rem;
+  }
+  
+  .ascii-Hero {
+    width: 100%;
+    text-align: center;
+  }
+  
   .ascii {
     font-size: var(--step--1);
     text-align: center;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
   }
   
   .profile-info {
     padding: var(--step--1);
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
   }
   
   .info-item {
@@ -467,12 +511,29 @@ a {
     font-size: var(--step--1);
   }
   
+  .content-container {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+    padding: 0 0.5rem;
+  }
+  
+  .ascii-Hero {
+    width: 100%;
+    text-align: center;
+  }
+  
   .ascii {
     font-size: var(--step--2);
+    padding-left: 0;
+    text-align: center;
   }
   
   .profile-info {
     padding: var(--step--2);
+    max-width: 100%;
+    width: 100%;
+    min-width: auto;
   }
   
   .info-item {
@@ -517,15 +578,29 @@ a {
 
 /* Landscape phone orientation */
 @media (max-width: 768px) and (orientation: landscape) {
-  #terminal {
-    height: 35vh;
+  .content-container {
+    flex-direction: row !important;
+    gap: 2rem !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
   
-  .content-container {
-    gap: 0.5rem;
+  .ascii-Hero {
+    flex-shrink: 0;
+    min-width: 40%;
   }
   
   .ascii {
-    margin-bottom: 0.5rem;
+    font-size: var(--step--2);
+    text-align: left;
+  }
+  
+  .profile-info {
+    max-width: 50%;
+    min-width: 300px;
+  }
+  
+  #terminal {
+    height: 35vh;
   }
 }
