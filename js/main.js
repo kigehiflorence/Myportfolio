@@ -37,7 +37,8 @@ const commandMap = {
 // Mobile detection and enhancements
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-         (window.innerWidth <= 768);
+         (window.innerWidth <= 768) || 
+         ('ontouchstart' in window);
 }
 
 // Mobile-specific adjustments
@@ -48,12 +49,36 @@ if (isMobile()) {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
   
+  // Add mobile-specific styles
+  document.body.classList.add('mobile-device');
+  
+  // Prevent zoom on input focus
+  const metaViewport = document.querySelector('meta[name="viewport"]');
+  if (metaViewport) {
+    metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+  }
+  
+  // Improve mobile scrolling
+  document.addEventListener('touchmove', function(e) {
+    if (e.target.closest('#terminal')) {
+      e.stopPropagation();
+    }
+  }, { passive: true });
+  
   window.addEventListener('resize', adjustForKeyboard);
+  window.addEventListener('orientationchange', adjustForKeyboard);
   adjustForKeyboard();
   
   // Add touch event for better mobile interaction
-  document.addEventListener('touchstart', function() {
-    textarea.focus();
+  document.addEventListener('touchstart', function(e) {
+    if (e.target.closest('.terminal-window')) {
+      textarea.focus();
+    }
+  });
+  
+  // Handle virtual keyboard on mobile
+  window.addEventListener('resize', function() {
+    setTimeout(scrollToBottom, 300);
   });
 }
 
@@ -79,8 +104,11 @@ window.addEventListener("keydown", function () {
   scrollToBottom();
 });
 
-document.addEventListener("click", function () {
-  textarea.focus();
+document.addEventListener("click", function (e) {
+  // Better mobile handling - only focus on terminal area clicks
+  if (!isMobile() || e.target.closest('.terminal-window')) {
+    textarea.focus();
+  }
   scrollToBottom();
 });
 
@@ -88,6 +116,18 @@ terminal.addEventListener("click", function () {
   textarea.focus();
   scrollToBottom();
 });
+
+// Add mobile-friendly input handling
+if (isMobile()) {
+  textarea.addEventListener('blur', function() {
+    // Prevent losing focus on mobile unless intentional
+    setTimeout(() => {
+      if (document.activeElement !== textarea) {
+        textarea.focus();
+      }
+    }, 100);
+  });
+}
 
 textarea.addEventListener("input", scrollToBottom);
 
