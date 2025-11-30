@@ -1,48 +1,44 @@
-var linkedin = "https://www.linkedin.com/in/griffotech254";
-var github = "https://github.com/TechGriffo254";
+var linkedin = "YOUR_LINKEDIN_URL_HERE"; // Please insert your actual LinkedIn URL
+var github = "https://github.com/kigehiflorence";
 var sudo = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
-var email = "mailto:griffotech254@gmail.com";
+var email = "mailto:florencekigehi@gmail.com";
 
 let banner = [
-  `<div id="banner-section" class="banner">
- Welcome to my portfolio! — Type <span class="command">help</span> for a list of supported commands.
-  </div>`,
+  `<div id="banner-section" class="banner">
+ Welcome to my portfolio! — Type <span class="command">help</span> for a list of supported commands.
+  </div>`,
 ];
 
 let aboutme = [
-  "<br>",
-  `<div id="aboutme-section">`,
-  `<span class='underline'>Hey, I'm Mudenyo Griffins! 👋</span>`,
-  "<br>",
-  `<li>🔐 I'm a Service Operations & Cybersecurity Specialist passionate about system security and operational excellence.</li>`,
-  `<li>🎓 Currently pursuing B.Sc. Computer Science at Kibabii University with specialization in Networking & Cybersecurity.</li>`,
-  `<li>🏆 Completed Software Engineering program at ALX Africa | Holberton School with honors.</li>`,
-  `<li>💻 Experienced in Python, C/C++, Java, JavaScript, and various cybersecurity tools.</li>`,
-  `<li>🛡️ Skilled in penetration testing, vulnerability assessment, and security audits.</li>`,
-  `<li>📊 Proficient in system monitoring, log analysis, and performance optimization.</li>`,
-  `<li>🔧 Expert in Linux systems (Debian, Kali, Arch, Parrot OS) and Windows administration.</li>`,
-  `<li>📂 Use the <span class="command">education</span>, <span class="command">experience</span>, <span class="command">skills</span>, and <span class="command">projects</span> commands to explore my background!</li>`,
-  `<li>📫 Contact: <a href="mailto:griffotech254@gmail.com">griffotech254@gmail.com</a></li>`,
-  "</div>",
-  "<br>",
+  "<br>",
+  `<div id="aboutme-section">`,
+  `<span class='underline'>Hey, I'm Florence Kigehi! 👋</span>`,
+  "<br>",
+[cite_start]  `<li>💻 I'm a **Certified, creative, and highly skilled Front-End Developer**[cite: 30].</li>`,
+[cite_start]  `<li>✨ Demonstrated expertise in designing and building scalable, user-centric web applications[cite: 30].</li>`,
+  `<li>🎓 Currently pursuing B.Sc. [cite_start]Computer Science at Kibabii University (Expected 2026)[cite: 6, 7].</li>`,
+[cite_start]  `<li>🧠 Proficient in HTML5, CSS3, JavaScript, TypeScript, and React, with experience in REST APIs, Node.js, and Next.js[cite: 31, 32].</li>`,
+[cite_start]  `<li>🚀 Dedicated to delivering clean and efficient digital solutions that elevate usability and optimize performance[cite: 33].</li>`,
+  `<li>📂 Use the <span class="command">education</span>, <span class="command">experience</span>, <span class="command">skills</span>, and <span class="command">projects</span> commands to explore my background!</li>`,
+  `<li>📫 Contact: <a href="mailto:florencekigehi@gmail.com">florencekigehi@gmail.com</a> | [cite_start]Phone: +254720223385 [cite: 3, 4]</li>`,
+  "</div>",
+  "<br>",
 ];
 
 let social = [
-  "<br>",
-  'linkedin       <a href="' +
-    linkedin +
-    '" target="_blank">linkedin/griffotech254</a>',
-  'github         <a href="' +
-    github +
-    '" target="_blank">github/TechGriffo254</a>',
-  'email          <a href="' +
-    email +
-    '" target="_blank">griffotech254@gmail.com</a>',
-  "<br>",
+  "<br>",
+  'github         <a href="' +
+    github +
+    '" target="_blank">github/kigehiflorence</a>',
+  'email          <a href="' +
+    email +
+    '" target="_blank">florencekigehi@gmail.com</a>',
+    [cite_start]'phone          +254720223385 [cite: 3]',
+  "<br>",
 ];
 
 let help = [
-  `<br><div id="help-section"><pre class="whitespace-pre-wrap">
+  `<br><div id="help-section"><pre class="whitespace-pre-wrap">
 <span class="command">aboutme</span>
 ↳ Displays who I am?
 <span class="command">social</span>
@@ -54,7 +50,7 @@ let help = [
 <span class="command">skills</span>
 ↳ View technical skills & expertise.
 <span class="command">projects</span>
-↳ View cybersecurity projects.
+↳ View front-end development projects.
 <span class="command">email</span>
 ↳ To send me an email.
 <span class="command">history</span>
@@ -71,150 +67,97 @@ let help = [
 ];
 
 let projects = [
-  "<br>",
-  `<div id="projects-section">`,
-  `<span class='underline'>Cybersecurity Projects</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-🛡️ Network Security Assessment
-• Conducted penetration testing on corporate networks
-• Identified and documented security vulnerabilities
-• Provided remediation strategies and security recommendations
+  "<br>",
+  `<div id="projects-section">`,
+  `<span class='underline'>Front-End Development Projects (Work Sample)</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+⚛️ React-based Learning App
+[cite_start]• Built a React-based learning app with an intuitive, user-friendly interface[cite: 41].
 
-🔍 Log Analysis & Incident Response
-• Developed automated log parsing scripts for security monitoring
-• Analyzed system logs to detect anomalous patterns
-• Created incident response documentation and procedures
+🛒 Mock Shopping Site
+[cite_start]• Created a mock shopping site with product listings, cart, and API-powered checkout[cite: 42].
 
-🚨 Vulnerability Assessment Tools
-• Built custom vulnerability scanning automation scripts
-• Integrated multiple security tools (Nmap, Nessus, Burp Suite)
-• Generated comprehensive security assessment reports
+✍️ Interactive Web Forms
+[cite_start]• Designed interactive web forms with validation, error handling, and smooth UX[cite: 43].
+
+🌐 General Web Development
+[cite_start]• Developed websites and web apps with a focus on usability, responsiveness, and accessibility[cite: 40].
+[cite_start]• Applied responsive design for mobile-friendly, high-performance applications[cite: 44].
+[cite_start]• Managed version control with GitHub and collaborated with online developer communities[cite: 45].
+[cite_start]• Live Project Example: https://689ce7998b0eb27aa73d266a--kigehimo-vie-reccomender.netlify.app/ [cite: 57, 58]
 </pre>`,
-
-  `<span class='underline'>Software Development Projects</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-💻 Backend Development
-• RESTful API development using Python and JavaScript
-• Database optimization and query performance tuning
-• Implementation of secure authentication and authorization systems
-
-📊 Data Analysis & Visualization
-• Real-time monitoring dashboards for system metrics
-• Automated reporting tools for operational insights
-• Statistical analysis scripts for performance optimization
-
-🔧 System Administration Tools
-• Bash automation scripts for routine maintenance tasks
-• Configuration management and deployment automation
-• Performance monitoring and alerting systems
-</pre>`,
-  "</div>",
-  "<br>",
+  "</div>",
+  "<br>",
 ];
 
 let skills = [
-  "<br>",
-  `<div id="skills-section">`,
-  `<span class='underline'>Programming & Scripting</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Languages: Python, C/C++, Java, JavaScript, Bash
-Frameworks: Backend Development, API Integration
-Version Control: Git, Advanced Workflow Management
+  "<br>",
+  `<div id="skills-section">`,
+  `<span class='underline'>Technical Skills</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+[cite_start]Core Languages: HTML5, CSS3, Javascript, Typescript [cite: 17]
+[cite_start]Frameworks/Libraries: React, Node.js, Next.js, WordPress [cite: 20, 21]
+[cite_start]Styling: SCSS, SAAS, Tailwind CSS, Responsive UI Design [cite: 18, 22]
+[cite_start]APIs: REST APIS, RESTful WebServices [cite: 19]
+[cite_start]Version Control: Git [cite: 23]
+[cite_start]Design Tools: Figma [cite: 24]
+[cite_start]Other: Python, PHP, Data Management, MongoDB [cite: 25, 26, 27]
 </pre>`,
 
-  `<span class='underline'>Service Operations & Monitoring</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-System Monitoring: Wireshark, Nmap, Network Analysis
-Log Analysis: Advanced log parsing and pattern recognition
-Process Automation: Python scripting, Bash automation
-Performance Optimization: System bottleneck identification
+  `<span class='underline'>Soft Skills</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+[cite_start]• Project Management [cite: 47]
+[cite_start]• Collaborative Problem Solving [cite: 48]
+[cite_start]• Teamwork & Team Leadership [cite: 49, 50]
+[cite_start]• Creative Problem Solving [cite: 51]
 </pre>`,
-
-  `<span class='underline'>Cybersecurity & Compliance</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Security Tools: Burp Suite, Metasploit, Nessus, John the Ripper
-Frameworks: ITIL understanding, Security compliance
-Risk Assessment: Vulnerability analysis, Threat modeling
-Incident Response: Investigation, Documentation, Remediation
-</pre>`,
-
-  `<span class='underline'>Database & Analytics</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Database Systems: MySQL, NoSQL (MongoDB), Data Modeling
-Data Analysis: Statistical analysis, Trend identification
-Reporting: Dashboard creation, Real-time monitoring
-</pre>`,
-
-  `<span class='underline'>Operating Systems</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-Linux: Debian, Kali, Arch, Parrot OS (Advanced)
-Windows: Advanced troubleshooting and administration
-UNIX Environment: Command-line proficiency
-</pre>`,
-  "</div>",
-  "<br>",
+  "</div>",
+  "<br>",
 ];
 
 let education = [
-  "<br>",
-  `<div id="education-section">`,
-  `<span class='underline'>Education</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-KIBABII UNIVERSITY | 2022 - Present
-• B.Sc. Computer Science (In Progress)
-• Specialization: Networking & Cybersecurity
-• Core Competencies: System Design, Database Management, 
-  Network Security, Artificial Intelligence
+  "<br>",
+  `<div id="education-section">`,
+  `<span class='underline'>Education</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+KIBABII UNIVERSITY | [cite_start]Expected 2026 [cite: 6, 7]
+• Bachelor of Computer science
+[cite_start]• Relevant Coursework: Web Design, Computing Essentials, Internet technologies [cite: 9, 10, 11]
 
-ALX AFRICA | HOLBERTON SCHOOL | 2023 - 2024
-• Software Engineering (Backend) Program - Completed with Honors
-• Advanced Training: Full-Stack Development, Database Optimization, 
-  System Administration
+ALX ACADEMY | [cite_start]2025 [cite: 12, 13, 14]
+• Professional Foundations Certificate
+• Front-end development Certificate
+• Pro-Dev Front-end Certificate
 </pre>`,
-  
-  `<span class='underline'>Certifications & Honors</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-IBM Honors:
-• Security Analyst Fundamentals
-• Cybersecurity Fundamentals
-
-ALX Honors:
-• Software Engineering Fundamentals
-• Backend Development Excellence
-
-Coursera Specialization:
-• Security Analyst Fundamentals (With Honors)
+  
+  `<span class='underline'>Certifications</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+• Responsive web design | Freecodecamp | [cite_start]2024 [cite: 15]
+• Professional Foundations Certificate | [cite_start]2025 [cite: 60]
+• Front-end Web Development Certificate | [cite_start]2025 [cite: 61]
+• Pro-Dev Front-end | [cite_start]2025 [cite: 62]
 </pre>`,
-  "</div>",
-  "<br>",
+  "</div>",
+  "<br>",
 ];
 
 let experience = [
-  "<br>",
-  `<div id="experience-section">`,
-  `<span class='underline'>Cybersecurity & System Analysis</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-• Conducted comprehensive penetration testing using industry-standard tools
-• Performed vulnerability assessments and security audits
-• Analyzed system logs for security incidents and performance bottlenecks
-• Developed automated scripts for routine security and operational tasks
+  "<br>",
+  `<div id="experience-section">`,
+  `<span class='underline'>Web Developer | Applications Developer (Personal Projects) | [cite_start]2023 - Present [cite: 38]</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+[cite_start]• Developed websites and web apps focusing on usability, responsiveness, and accessibility[cite: 40].
+[cite_start]• Built a React-based learning app with an intuitive, user-friendly interface[cite: 41].
+[cite_start]• Created a mock shopping site with product listings, cart, and API-powered checkout[cite: 42].
+[cite_start]• Applied responsive design for mobile-friendly, high-performance applications[cite: 44].
+[cite_start]• Managed version control with GitHub and collaborated with online developer communities[cite: 45].
 </pre>`,
 
-  `<span class='underline'>Service Operations Projects</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-• Implemented monitoring solutions for system performance tracking
-• Created automated reporting dashboards for operational metrics
-• Optimized database queries and system processes for improved efficiency
-• Analyzed service logs to identify and resolve operational issues
+  `<span class='underline'>ICT Intern (County Government of Bungoma) | [cite_start]May - July 2025 [cite: 35, 36]</span>`,
+  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
+[cite_start]• Contributed to the development of official county websites[cite: 37].
+[cite_start]• Supported content management, IT operations, and system troubleshooting[cite: 37].
 </pre>`,
-
-  `<span class='underline'>Data Analysis & Reporting</span>`,
-  `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
-• Processed and analyzed large datasets for operational insights
-• Created visualization dashboards for real-time system monitoring
-• Developed data integrity validation processes
-• Generated actionable reports for operational decision-making
-</pre>`,
-  "</div>",
-  "<br>",
+  "</div>",
+  "<br>",
 ];
