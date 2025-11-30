@@ -1,9 +1,9 @@
-# 🚀 TechGriffo Portfolio - Ready for Deployment!
+# 🚀 Kigehiflorence Portfolio - Ready for Deployment!
 
 ## ✅ Repository Setup Complete
 
 Your portfolio has been successfully pushed to:
-**https://github.com/TechGriffo254/portifolioGriffo.git**
+**https://github.com/kigehiflorence**
 
 ## 🌐 Deploy to Vercel
 
@@ -53,4 +53,4 @@ Your portfolio has been successfully pushed to:
 - Responsive across all devices
 - Optimized terminal size
 
-Your TechGriffo terminal portfolio is now ready for the world! 🌟
+Your kigehiflorence terminal portfolio is now ready for the world! 🌟

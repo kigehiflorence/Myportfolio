@@ -1,4 +1,4 @@
-# TechGriffo Terminal Portfolio - Deployment Guide
+# KigehiFlorence Terminal Portfolio - Deployment Guide
 
 ## Quick Deployment to Vercel
 
@@ -62,4 +62,4 @@ Test your site on:
 - Tablet devices
 - Different orientations
 
-Your TechGriffo portfolio is now fully mobile-responsive! 🚀
+Your kigehiflorence portfolio is now fully mobile-responsive! 🚀

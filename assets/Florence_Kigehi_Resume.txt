@@ -1,0 +1,89 @@
+Florence
+Kigehi
+Front-end developer
+
++254720223385|GitHub: https://github.com/kigehiflorence  |florencekigehi@gmail.com
+Bungoma,Kenya.
+
+EDUCATION
+Bachelor of Computer science|Kibabii University|Expected 2026
+Relevant coursework.
+Web Design.
+Computing Essentials.
+Internet technologies
+Professional foundationsCertificate|ALX Academy|2025
+Front-end development Certificate|ALX Academy|2025
+Pro-Dev Front-end Certificate|ALX Academy|2025
+Responsive web design|Freecodecamp|2024
+
+TECHNICAL SKILLS
+
+HTML5,CSS3,Javascript,Typescript
+SCSS, SAAS, Tailwind CSS
+REST APIs,RESTful WebServices
+Node.js, Next.js 
+React,WordPress
+Responsive UI design
+Version Control(Git)
+Figma
+Data Management
+Python
+MongoDB,PHP
+
+WORK SAMPLE
+https://689ce7998b0eb27aa73d266a--kigehimovie-reccomender.netlify.app/ 
+
+
+
+
+PROFESSIONAL SUMMARY
+Certified, creative, and highly skilled Front-End Developer with demonstrated expertise in designing and building scalable, user-centric web applications using modern JavaScript frameworks and responsive design principles. Proficient in HTML5, CSS3, JavaScript, TypeScript,Wordpress and React, with experience in REST APIs, Node.js, and Next.js. Dedicated to delivering clean and efficient digital solutions that elevate usability, optimize performance, and strengthen security.
+
+WORK EXPERIENCE
+ICT Intern
+ County Government of Bungoma (Assembly & Executive) | May 14th 2025 to July 2025
+Contributed to the development of official county websites.
+
+
+Supported content management, IT operations, and system troubleshooting.
+Web Developer | Applications Developer
+ Personal Projects | 2023 – Present
+Developed websites and web apps with a focus on usability, responsiveness, and accessibility.
+
+
+Built a React-based learning app with an intuitive, user-friendly interface.
+
+
+Created a mock shopping site with product listings, cart, and API-powered checkout.
+
+
+Designed interactive web forms with validation, error handling, and smooth UX.
+
+
+Applied responsive design for mobile-friendly, high-performance applications.
+
+
+Managed version control with GitHub and collaborated with online developer communities.
+SOFT SKILLS  
+- Project Management  
+- Collaborative Problem Solving  
+- Teamwork  
+- Team Leadership  
+- Creative Problem Solving  
+
+INTERESTS
+- Women Empowerment Initiatives  
+- Swimming & Outdoor Adventures  
+- Learning New Front-End Frameworks & Tech Tools  
+
+LANGUAGES
+Swahili(Native), English(Expert)
+
+CERTIFICATIONS
+Professional Foundations Certificate|2025
+Front-end Web Development Certificate|2025
+Pro-Dev Front-end|2025 
+AI Career Essentials|2025
+Freelancer Academy|2025
+
+
