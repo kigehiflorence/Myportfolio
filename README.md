@@ -1,9 +1,9 @@
-# TechGriffo Terminal Portfolio
+# 🚀 Kigehi Florence Terminal Portfolio
 
 ## About The Project
-A terminal-style cybersecurity specialist portfolio built to showcase skills and projects through a fun, interactive command-line interface.
+A terminal-style **Front-end Developer** portfolio built to showcase skills and projects through a fun, interactive command-line interface.
 
-🌐 **Live Demo:** Coming soon on Vercel!
+🌐 **Live Demo:** Coming soon on Vercel! (Will be updated once deployed)
 
 ### Built With
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -17,19 +17,19 @@ A terminal-style cybersecurity specialist portfolio built to showcase skills and
 ## Portfolio Features
 
 ### Interactive Commands
-- `aboutme` - Learn about Mudenyo Griffins (TechGriffo)
+- `aboutme` - Learn about **Florence Kigehi**
 - `education` - Educational background and certifications
 - `experience` - Work experience and projects
 - `skills` - View technical skills and expertise
-- `projects` - Explore cybersecurity and development projects
+- `projects` - Explore **Front-end Development** projects
 - `social` - Social media and contact links
 - `help` - View all available commands
 
 ### Contact Information
-- **Email:** griffotech254@gmail.com
-- **Phone:** +254113406513
-- **LinkedIn:** [linkedin.com/in/griffotech254](https://www.linkedin.com/in/griffotech254)
-- **GitHub:** [github.com/TechGriffo254](https://github.com/TechGriffo254)
+- **Email:** florencekigehi@gmail.com
+- **Phone:** +254720223385
+- **GitHub:** [github.com/kigehiflorence](https://github.com/kigehiflorence)
+- **LinkedIn:** * [https://www.linkedin.com/in/florence-kigehi-3401a1316/] *
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
 
@@ -52,7 +52,7 @@ A terminal-style cybersecurity specialist portfolio built to showcase skills and
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/TechGriffo254/Terminal-Portfolio.git
+git clone [https://github.com/kigehiflorence/Terminal-Portfolio.git](https://github.com/kigehiflorence/Terminal-Portfolio.git)
 
 # Navigate to project directory
 cd Terminal-Portfolio
@@ -64,36 +64,3 @@ python -m http.server 8000
 npx http-server
 
 # Open browser to http://localhost:8000
-```
-
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
-
----
-
-## Use This as a Template
-
-You are welcome to use this repository as a **template for your own terminal-style portfolio**!  
-Feel free to fork it, modify it, and make it your own. Credit is appreciated but not mandatory.
-
-And don't forget to ⭐ the project if you find it helpful!
-
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
-
----
-
-## License
-
-![CC BY-SA 4.0](https://user-images.githubusercontent.com/65147258/209966249-88275ba5-75a3-4a4e-af1c-7d861c5cf838.png)
-
-**Terminal Portfolio** by **Mudenyo Griffins (TechGriffo)** is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).  
-Originally inspired by terminal portfolio concepts.
-
----
-
-## Contact
-
-- 📧 Email: [griffotech254@gmail.com](mailto:griffotech254@gmail.com)  
-- 💼 LinkedIn: [griffotech254](https://www.linkedin.com/in/griffotech254)  
-- 📱 Phone: +254113406513
-
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
