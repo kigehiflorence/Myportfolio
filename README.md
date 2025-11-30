@@ -29,7 +29,7 @@ A terminal-style **Front-end Developer** portfolio built to showcase skills and 
 - **Email:** florencekigehi@gmail.com
 - **Phone:** +254720223385
 - **GitHub:** [github.com/kigehiflorence](https://github.com/kigehiflorence)
-- **LinkedIn:** *[Add your LinkedIn Link Here]*
+- **LinkedIn:** * [https://www.linkedin.com/in/florence-kigehi-3401a1316/] *
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
 
